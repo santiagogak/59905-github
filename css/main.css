@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de h1 */
+h1 {
+    background-color: brown;
+}
+
+/* estilos de la caja */
+.caja {
+    background-color: tomato;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+
+    /* ejemplo margin */
+    margin-top: 50px;
+
+    /* ejemplo border */
+    border: 3px inset black;
+    border-radius: 40%;
+}
+
+.bloque, .linea {
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.bloque {
+    background-color: rgb(134, 73, 73);
+    display: inline-block;
+}
+
+.linea {
+    background-color: rgb(94, 94, 219);
+}
+
+/* header */
+
+header {
+    background-color: rgb(210, 126, 112);
+    padding: 30px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 100px;
+    background-color: tomato;
+    padding: 10px;
+    box-shadow: 10px 20px 20px black;
+}
+
+/* ejemplo de relative */
+.item-relative {
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+/* ejemplo de absolute */
+
+.absolute {
+    position: relative;
+}
+
+.item-absolute {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+/* ejemplo de fixed */
+
+.item-fixed {
+    position: fixed;
+    bottom: 3px;
+    right: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+/* ejemplo de sticky */
+
+.menu {
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.menu ul li {
+    list-style: none;
+    background-color: tomato;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
